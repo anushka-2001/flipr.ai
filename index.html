@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flipr.ai</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favi.ico">
+  <style>
+    body {
+	background-image:url('tenor.gif'); background-repeat:repeat; 
+	display: size;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+
+.dropbtn {
+  background-color: #ff4163;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: #d4d4d4;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  background : #ff4163;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: black;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #ff4163;}
+
+    
+    </style>
+</head>
+<body backgroung-image >
+ 
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+      
+      
+      
+      <!-- <li><span><a href="#">Tracker</a></span></li>
+               <div class = "dropdown-content">
+                <ul>
+                  <li></li>
+                  <li><a href="Tatasteel.html">Tata Steel</a></li>
+                  <li></li>
+                  <li><</li>
+       
+                 </ul>
+              </div>  -->
+      <li><a href="https://economictimes.indiatimes.com/">News</a></li>
+      <li><a href="https://flipr.ai/">Contact</a></li>
+      <li><a href="http://127.0.0.1:5500/form.html?#">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="http://127.0.0.1:5500/index.html#">Home</a>
+    
+    <a href="https://economictimes.indiatimes.com/">News</a>
+    <a href="https://flipr.ai/">Contact</a>
+    <a href="http://127.0.0.1:5500/form.html?#">Sign in</a>
+  </div>
+
+  <div id="main">
+    <h1></h1>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+
+
+<div class="dropdown">
+  <button class="dropbtn"><a href="#">Tracker</a></button>
+  <div class="dropdown-content">
+    <a href = "reliance.html">Reliance</a>
+    <a href="AshokLeyland.html">Ashok Leyland</a>
+    <a href="Tatasteel.html">Tata Steel</a>
+    <a href="cipla.html">Cipla</a>
+    <a href="eichermotor.html">Eicher Motor</a>
+  </div>
+   <!-- <div style="width:100%;height:0;padding-bottom:56%;position:fit;"><iframe src="https://giphy.com/embed/XDAY1NNG2VvobAp9o0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
+  
+</body>
+</html>

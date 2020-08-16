@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset ="UTF-8" />
+  <meta name ="viewport" content="width=device-width,initial-scale =1.0"/>
+  <meta http-equiv="X-UA-Compatible" content = "ie=edge"/>
+  <link rel="stylesheet"
+  href ="https://use.fontawesome.com/release/v5.8.1/css/all.css"
+  inegrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+  crossorigin="anonymous"/>
+  <title>Flipr.ai</title>
+  <link rel="icon" href="favi.ico">
+  <link rel="stylesheet" href="formstyle.css"/>
+  <title>signUp/signin form</title>
+  <script>
+    body {
+	background-image:url('tenor.gif'); background-repeat:repeat; 
+	display: size;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+<!-- // </head> <body>
+//   <nav class="navbar">
+//     <span class="open-slide">
+//       <a href="#" onclick="openSlideMenu()">
+//         <svg width="30" height="30">
+//             <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+//             <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+//             <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+//         </svg>
+//       </a>
+//     </span>
+
+//     <ul class="navbar-nav">
+//       <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+      
+      
+//       <li><span><a href="#">Tracker</a></span></li>
+//                <div class = "dropdown-content">
+//                 <ul>
+//                   <li><a href = "reliance.html">Reliance</a></li>
+//                   <li><a href="AshokLeyland.html">Ashok Leyland</a></li>
+//                   <li><a href="Tatasteel.html">Tata Steel</a></li>
+//                   <li><a href="cipla.html">Cipla</a></li>
+//                   <li><a href="eichermotor.html">Eicher Motor</a></li>
+       
+//                  </ul>
+//               </div> 
+//       <li><a href="https://flipr.ai/">Contact</a></li>
+//       <li><a href="http://127.0.0.1:5500/form.html?#">Sign in</a></li>
+//     </ul>
+//   </nav>
+
+//   <div id="side-menu" class="side-nav">
+//     <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+//     <a href="http://127.0.0.1:5500/index.html#">Home</a>
+    
+//     <a href="#">Tracker</a>
+//     <a href="https://flipr.ai/">Contact</a>
+//     <a href="http://127.0.0.1:5500/form.html?#">Sign in</a>
+//   </div>
+
+//   <div id="main">
+//     <h1></h1>
+//   </div> -->
+
+ <script> 
+//     function openSlideMenu(){
+//       document.getElementById('side-menu').style.width = '250px';
+//       document.getElementById('main').style.marginLeft = '250px';
+//     }
+
+//     function closeSlideMenu(){
+//       document.getElementById('side-menu').style.width = '0';
+//       document.getElementById('main').style.marginLeft = '0';
+//     }
+//   </script>
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<!-- <div class="social-container">
+				<a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fin.linkedin.com%2Fin%2Fanushka-bhagchandani-07659618b&fromSignIn=true&trk=public_profile_conversion-modal-signin" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div> -->
+			<span>or use your email for registration</span>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<!-- <div class="social-container">
+				<a href="https://www.facebook.com/" class="social"><i class="fab fa-facebook-f"></i></a>
+				<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="social"><i class="fab fa-google-plus-g"></i></a>
+				<a href="https://www.linkedin.com/login?session_redirect=https%3A%2F%2Fin.linkedin.com%2Fin%2Fanushka-bhagchandani-07659618b&fromSignIn=true&trk=public_profile_conversion-modal-signin" class="social"><i class="fab fa-linkedin-in"></i></a>
+			</div> -->
+			<span>or use your account</span>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Glag to have you back!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src ="formjs.js"></script>
+</body>
+</html>

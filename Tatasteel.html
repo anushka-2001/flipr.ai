@@ -1,0 +1,148 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flipr.ai</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favi.ico">
+  <style>
+    body {
+	background-image:url('tenor.gif'); background-repeat:repeat; 
+	display: size;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+
+    .dropbtn {
+      background-color: #4CAF50;
+      color: white;
+      padding: 16px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    </style>
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'stock', 'hike'],
+          ['2013',  547,      2470],
+          ['2014',  1170,      460],
+          ['2015',  1660,       1120],
+          ['2016',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Tata Steel',
+          hAxis: {title: 'Year',  titleTextStyle: {color: '#333'}},
+          vAxis: {minValue: 0}
+        };
+
+        var chart = new google.visualization.AreaChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+<body backgroung-image >
+ 
+  <nav class="navbar">
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="30" height="30">
+            <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+            <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+            <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+        </svg>
+      </a>
+    </span>
+
+    <ul class="navbar-nav">
+      <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+      
+      
+      <li><a href="https://economictimes.indiatimes.com/">News</a></li>
+               <!-- <div class = "dropdown-content">
+                <ul>
+                  <li><a href = "reliance.html">Reliance</a></li>
+                  <li><a href="AshokLeyland.html">Ashok Leyland</a></li>
+                  <li><a href="Tatasteel.html">Tata Steel</a></li>
+                  <li><a href="cipla.html">Cipla</a></li>
+                  <li><a href="eichermotor.html">Eicher Motor</a></li>
+       
+                 </ul>
+              </div>  -->
+      <li><a href="https://flipr.ai/">Contact</a></li>
+      <li><a href="http://127.0.0.1:5500/form.html?#">Sign in</a></li>
+    </ul>
+  </nav>
+
+  <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="http://127.0.0.1:5500/index.html#">Home</a>
+    
+    <a href="https://economictimes.indiatimes.com/">News</a>
+    <a href="https://flipr.ai/">Contact</a>
+    <a href="http://127.0.0.1:5500/form.html?#">Sign in</a>
+  </div>
+
+  <div id="main">
+    <h1></h1>
+  </div>
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+  </script>
+   <!-- <div style="width:100%;height:0;padding-bottom:56%;position:fit;"><iframe src="https://giphy.com/embed/XDAY1NNG2VvobAp9o0" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div> -->
+   <div id="chart_div" style="width: 100%; height: 500px;"></div>
+  
+</body>
+</html>

@@ -1,0 +1,112 @@
+body{
+  font-family:"Arial", Serif;
+  background-image: url('https://giphy.com/gifs/XDAY1NNG2VvobAp9o0/html5');
+    background-size: cover;
+  background-color:#f4f4f4;
+  overflow-x:hidden;
+}
+
+.navbar{
+  background-color:#FF416C;
+  overflow:hidden;
+  height:63px;
+}
+
+
+
+.navbar a{
+  float:left;
+  display:block;
+  color:#F4f4f4;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
+}
+
+.navbar ul{
+  margin:8px 0 0 0;
+  list-style:none;
+}
+
+.navbar a:hover{
+  background-color:gainsboro;
+  color:midnightblue;
+}
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#FF416C;
+  opacity: 0.7;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#f4f4f4;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#56556e;
+  background-color:#FF416C ;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+  padding:20px;
+  overflow:hidden;
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
+}
+
+button {
+	border-radius: 20px;
+	border: 1px solid #56556e;
+	background-color : #56556e;
+	color: #f4f4f4;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+
+button:active {
+	transform: scale(0.95);
+}
+
+button:focus {
+	outline: none;
+}
+
+button.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
